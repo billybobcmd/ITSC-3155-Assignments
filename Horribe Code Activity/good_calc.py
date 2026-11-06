@@ -1,6 +1,7 @@
 """
 Calculator w/ good coding practices
-Author: Tristan Coleman"""
+Author: Tristan Coleman
+"""
 
 def add(a: float, b: float) -> float:
     """Return the sum of two numbers."""
