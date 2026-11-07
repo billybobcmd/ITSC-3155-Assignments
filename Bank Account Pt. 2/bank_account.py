@@ -1,6 +1,5 @@
 """
 Bank Account 2.0
-Author: Tristan Coleman
 """
 
 class BankAccount:
