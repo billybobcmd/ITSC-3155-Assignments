@@ -4,19 +4,21 @@ Author: Tristan Coleman
 """
 
 class BankAccount:
+    title = "Metro Bank"
 
     def __init__(self, name, curr_balance, min_balance):
-        self.title = "Metro Bank"
         self.name = name
         self.curr_balance = curr_balance
         self.min_balance = min_balance
 
     def deposit(self, amount):
+        """Add to balance & print amount deposited"""
         self.curr_balance += amount
         print(self.name,"deposited $" + str(amount))
 
     def withdraw(self, amount):
-        if self.curr_balance - amount > self.min_balance:
+        """Subtract from balance and print amount withdrawn"""
+        if self.curr_balance - amount < self.min_balance:
             print("Error: ",self.name,"attempted to overdraw")
         else:
             self.curr_balance -= amount
